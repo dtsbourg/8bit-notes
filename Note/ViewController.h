@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController <UITextViewDelegate>
+@property (strong, nonatomic) IBOutlet UITextView *textLabel;
+@property (strong, nonatomic) IBOutlet UILabel *navBarTitle;
+@property (strong, nonatomic) IBOutlet UIImageView *image;
+@property (strong, nonatomic) NSString* noteRef;
 @end
